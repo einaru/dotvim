@@ -56,7 +56,7 @@ if filereadable(expand('~/.vim/filetypes.vim'))
 	source ~/.vim/filetypes.vim
 endif
 
-" ================ Mappings ==========================
+" ================ Key mappings ======================
 
 nmap <C-PageUp> :bprevious<cr>
 nmap <C-PageDown> :bnext<cr>
@@ -64,6 +64,8 @@ map <A-1> :bprevious<cr>
 map <A-2> :bnext<cr>
 map <A-3> :buffers<cr>
 map <Leader><del> :bdelete<cr>
+
+let g:user_emmet_leader_key='<C-e>'
 
 " ================ Gvim ==============================
 
