@@ -13,6 +13,7 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'othree/html5.vim'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'lepture/vim-jinja'
+Bundle 'mattn/emmet-vim'
 
 " cosmetics
 Bundle 'scrooloose/nerdtree'
