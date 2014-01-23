@@ -72,7 +72,7 @@ let g:user_emmet_leader_key='<C-e>'
 if has('gui_running')
 	colorscheme Tomorrow
 	set lines=24 columns=80
-	set guifont=Monospace\ 10
+	set guifont=Monospace\ 9
 	set guioptions+=c   " use console dialogs
 	set guioptions-=T   " disable gui toolbar
 endif
