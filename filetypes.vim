@@ -5,24 +5,19 @@ if has('autocmd')
 	" ============ Completion ==============================
 	set ofu=syntaxcomplete#Complete
 
-
 	" ============ C/C++ ===================================
 	au FileType c,cpp set noai ts=2 sw=2 sts=2 noet
 
-
 	" ============ Python ==================================
 	au FileType python set ts=8 sw=4 sts=4 et nosi
-
 
 	" ============ Html, Css, ... ==========================
 	au BufNewFile,BufRead *.jade set ts=2 sw=2 sts=2 noet
 	au FileType html,xhtml,xml,xsd,css,ant set ts=2 sw=2 sts=2 noet
 
-
 	" ============ Javascript ==============================
 	au BufNewFile,BufRead *.json set ft=javascript
 	au FileType javascript set ts=4 sw=4 sts=4 noet
-
 
 	" ============ LaTeX ===================================
 	let g:tex_flavor='latex'

@@ -10,9 +10,11 @@ Bundle 'gmarik/vundle'
 
 " Utilities
 Bundle 'scrooloose/nerdtree'
-"Bundle 'valloric/youcompleteme'
 Bundle 'sirver/ultisnips'
 Bundle 'honza/vim-snippets'
+
+" Git
+Bundle 'tpope/vim-fugitive'
 
 " Cosmetics
 Bundle 'bling/vim-airline'

@@ -96,6 +96,7 @@ endif
 set laststatus=2
 let g:airline_powerline_fonts=1
 let g:airline_theme='luna'
+let g:airline#extensions#branch#enabled = 1
 
 " UltiSnips snippets engine
 let g:UltiSnipsExpandTrigger='<c-j>'

@@ -20,7 +20,16 @@ nmap <Leader>w :w!<cr>
 " Edit and source the vimrc file
 map <Leader>ve :e ~/.vimrc<cr>
 map <Leader>vs :so ~/.vimrc<cr>
+map <Leader>vke :e ~/.vim/keymap.vim<cr>
+map <Leader>vfe :e ~/.vim/functions.vim<cr>
+map <Leader>vte :e ~/.vim/filetypes.vim<cr>
 
 " Run make
 map <Leader>m :!make<cr>
+
+" Toggle spelling
+map <Leader>ss :setlocal spell!<cr>
+
+" Toggle paste mode
+map <Leader>pp :setlocal paste!<cr>
 
