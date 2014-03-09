@@ -1,23 +1,32 @@
+" ================ Vundle ==================================
+
 filetype off
 
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 
 " let Vundle manage Vundle
-Bundle "gmarik/vundle"
+Bundle 'gmarik/vundle'
 
-" javascript
+" Utilities
+Bundle 'scrooloose/nerdtree'
+"Bundle 'valloric/youcompleteme'
+Bundle 'sirver/ultisnips'
+Bundle 'honza/vim-snippets'
+
+" Cosmetics
+Bundle 'bling/vim-airline'
+
+" Javascript
 Bundle 'pangloss/vim-javascript'
 
-" html, xml, css, markdown, ...
+" Html, xml, css, markdown, ...
 Bundle 'othree/html5.vim'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'lepture/vim-jinja'
-Bundle 'mattn/emmet-vim'
 
-" cosmetics
-Bundle 'scrooloose/nerdtree'
-Bundle 'bling/vim-airline'
-Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+" Python
+"Bundle 'davidhalter/jedi-vim'
+"Bundle 'andviro/flake8-vim'
 
 filetype plugin indent on
