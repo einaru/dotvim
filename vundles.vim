@@ -28,6 +28,9 @@ Bundle 'digitaltoad/vim-jade'
 Bundle 'lepture/vim-jinja'
 
 " Python
+Bundle 'hynek/vim-python-pep8-indent'
+"Bundle 'klen/python-mode'
+"Bundle 'nvie/vim-flake8'
 "Bundle 'davidhalter/jedi-vim'
 "Bundle 'andviro/flake8-vim'
 

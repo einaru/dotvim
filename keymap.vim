@@ -26,10 +26,15 @@ map <Leader>vte :e ~/.vim/filetypes.vim<cr>
 
 " Run make
 map <Leader>m :!make<cr>
+map <Leader>sm :silent make<cr>
+map <Leader>smv :silent make view<cr>
 
 " Toggle spelling
 map <Leader>ss :setlocal spell!<cr>
 
 " Toggle paste mode
 map <Leader>pp :setlocal paste!<cr>
+
+" Toggle line numbers
+map <Leader>n :set number!<cr>
 

@@ -45,8 +45,8 @@ set sidescroll=1
 
 if has('gui_running')
 	colorscheme summerfruit256
-	set columns=80
-	set guifont=Monospace\ 9
+	"set columns=80
+	set guifont=Monospace\ 8
 	set guioptions+=c        " use console dialogs
 	set guioptions-=T        " disable gui toolbar
 endif
@@ -63,6 +63,7 @@ set noexpandtab
 
 " Display special characters visually
 set lcs=tab:\|-,trail:~,nbsp:¬,precedes:<,extends:>
+set linebreak
 set list
 
 " Add a highlight group to look out for trailing whitespaces
@@ -103,4 +104,3 @@ let g:UltiSnipsExpandTrigger='<c-j>'
 let g:UltiSnipsJumpForwardTrigger='<c-j>'
 let g:UltiSnipsJumpBackwardTrigger='<c-k>'
 let g:UltiSnipsEditSplit='horizontal'
-

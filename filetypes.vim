@@ -23,9 +23,9 @@ if has('autocmd')
 	let g:tex_flavor='latex'
 	au FileType tex set ts=2 sw=2 sts=2 noet
 	" move on soft lines in insert mode
-	au FileType tex map <buffer> <Down> gj
-	au FileType tex imap <buffer> <Down> <C-o>g<Down>
-	au FileType tex map <buffer> <Up> gk
-	au FileType tex imap <buffer> <Up> <C-o>g<Up>
+	"au FileType tex map <buffer> <Down> gj
+	"au FileType tex imap <buffer> <Down> <C-o>g<Down>
+	"au FileType tex map <buffer> <Up> gk
+	"au FileType tex imap <buffer> <Up> <C-o>g<Up>
 
 endif

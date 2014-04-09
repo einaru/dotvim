@@ -17,3 +17,49 @@ fun! AppendModeline()
 endfun
 nmap <silent> <Leader>ml :call AppendModeline()<cr>
 
+" Subst(lineno, pattern, replace)
+" If and only if a match for a:pattern is found in line at a:lineno,
+" replace with a:replace.
+fun! s:Subst(lineno, pattern, replace)
+	let curline = getline(a:lineno)
+	if match(curline, a:pattern) != -1
+		let newline = substitute(curline, a:pattern, a:replace, '')
+		if (newline != curline)
+			keepjumps call setline(a:lineno, newline)
+		endif
+	endif
+endfun
+
+" ToggleTodoTag()
+" Simple utility function for marking todo tags done, and vice versa.
+" Matching timestamps is also updated.
+fun! ToggleTodoTag()
+	" Get the current line
+	let save_cursor = getpos('.')
+	let lineno = line('.')
+	let curline = getline(lineno)
+
+	let match_found = 0
+	if match(curline, 'TODO') != -1
+		let tag_pattern = 'TODO'
+		let tag_replace = 'DONE'
+		let match_found = 1
+	elseif match(curline, 'DONE') != -1
+		let tag_pattern = 'DONE'
+		let tag_replace = 'TODO'
+		let match_found = 1
+	endif
+
+	" Do substitution
+	if match_found == 1
+		let date_pattern = '\(\d\{4}\)\(-\d\{2}\)\(-\d\{2}\)'
+		let date_replace = strftime('%Y-%m-%d')
+		call s:Subst(lineno, tag_pattern, tag_replace)
+		call s:Subst(lineno, date_pattern, date_replace)
+	endif
+
+	" Restore cursor position
+	call setpos(".", save_cursor)
+endfun
+map <Leader>d :call ToggleTodoTag()<cr>
+map <Leader>tt :call ToggleTodoTag()<cr>
