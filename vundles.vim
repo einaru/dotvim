@@ -1,37 +1,55 @@
 " ================ Vundle ==================================
 
+set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+call vundle#begin()
 
 " let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 " Utilities
-Bundle 'scrooloose/nerdtree'
-Bundle 'sirver/ultisnips'
-Bundle 'honza/vim-snippets'
+Plugin 'scrooloose/nerdtree'
+Plugin 'sirver/ultisnips'
+Plugin 'honza/vim-snippets'
 
 " Git
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 
 " Cosmetics
-Bundle 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 
 " Javascript
-Bundle 'pangloss/vim-javascript'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mustache/vim-mustache-handlebars'
 
 " Html, xml, css, markdown, ...
-Bundle 'othree/html5.vim'
-Bundle 'digitaltoad/vim-jade'
-Bundle 'lepture/vim-jinja'
+Plugin 'othree/html5.vim'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'lepture/vim-jinja'
 
 " Python
-Bundle 'hynek/vim-python-pep8-indent'
-"Bundle 'klen/python-mode'
-"Bundle 'nvie/vim-flake8'
-"Bundle 'davidhalter/jedi-vim'
-"Bundle 'andviro/flake8-vim'
+Plugin 'hynek/vim-python-pep8-indent'
+"Plugin 'klen/python-mode'
+"Plugin 'nvie/vim-flake8'
+"Plugin 'davidhalter/jedi-vim'
+"Plugin 'andviro/flake8-vim'
 
+" All of your Plugins must be added before the following line
+call vundle#end()
 filetype plugin indent on
+
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins;
+"                     append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins;
+"                     append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
