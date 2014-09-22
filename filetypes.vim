@@ -14,6 +14,7 @@ if has('autocmd')
 	" ============ Html, Css, ... ==========================
 	au BufNewFile,BufRead *.jade set ts=2 sw=2 sts=2 noet
 	au FileType html,xhtml,xml,xsd,css,ant set ts=2 sw=2 sts=2 noet
+	au BufNewFile,BufRead *.md,*.markdown set ft=markdown
 
 	" ============ Javascript ==============================
 	au BufNewFile,BufRead *.json set ft=javascript
