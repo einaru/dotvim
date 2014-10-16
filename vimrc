@@ -87,8 +87,8 @@ endif
 
 " ================ Key mappings ============================
 
-if filereadable(expand('~/.vim/keymap.vim'))
-	source ~/.vim/keymap.vim
+if filereadable(expand('~/.vim/keymaps.vim'))
+	source ~/.vim/keymaps.vim
 endif
 
 " ================ Plugin specifics ========================
