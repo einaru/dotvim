@@ -41,16 +41,6 @@ set scrolloff=3              " start scrolling 'n' lines away from margins
 set sidescrolloff=3
 set sidescroll=1
 
-" ================ Gvim ====================================
-
-if has('gui_running')
-	colorscheme summerfruit256
-	"set columns=80
-	set guifont=Monospace\ 8
-	set guioptions+=c        " use console dialogs
-	set guioptions-=T        " disable gui toolbar
-endif
-
 " ================ Indentation =============================
 
 set autoindent               " copy indent from current line
@@ -93,14 +83,25 @@ endif
 
 " ================ Plugin specifics ========================
 
-" Airline statusbar
-set laststatus=2
-let g:airline_powerline_fonts=1
-let g:airline_theme='luna'
-let g:airline#extensions#branch#enabled = 1
-
 " UltiSnips snippets engine
 let g:UltiSnipsExpandTrigger='<c-j>'
 let g:UltiSnipsJumpForwardTrigger='<c-j>'
 let g:UltiSnipsJumpBackwardTrigger='<c-k>'
 let g:UltiSnipsEditSplit='horizontal'
+
+" ================ Gvim ====================================
+
+if has('gui_running')
+	colorscheme summerfruit256
+	"set columns=80
+	"set guifont=Monospace\ 8
+	set guioptions+=c        " use console dialogs
+	set guioptions-=T        " disable gui toolbar
+
+	" Airline statusbar
+	set laststatus=2
+
+	let g:airline_powerline_fonts=1
+	let g:airline_theme='luna'
+	let g:airline#extensions#branch#enabled=1
+endif
