@@ -40,6 +40,7 @@ Plugin 'hynek/vim-python-pep8-indent'
 
 " Vala
 Plugin 'einaru/vim-vala-bim'
+Plugin 'einaru/vim-colorschemes'
 
 call vundle#end()
 filetype plugin indent on
