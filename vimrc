@@ -104,4 +104,8 @@ if has('gui_running')
 	let g:airline_powerline_fonts=1
 	let g:airline_theme='luna'
 	let g:airline#extensions#branch#enabled=1
+else
+	set t_Co=256 " Needed in order to get colors for some schems, e.g. lucius
+	colorscheme lucius
+	LuciusDarkHighContrast
 endif
