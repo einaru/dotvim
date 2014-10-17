@@ -38,5 +38,8 @@ Plugin 'hynek/vim-python-pep8-indent'
 "Plugin 'davidhalter/jedi-vim'
 "Plugin 'andviro/flake8-vim'
 
+" Vala
+Plugin 'einaru/vim-vala-bim'
+
 call vundle#end()
 filetype plugin indent on
