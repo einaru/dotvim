@@ -61,7 +61,7 @@ highlight TrailingWhitespace ctermbg=red guibg=red
 au InsertEnter * match TrailingWhitespace /\s\+\%#\@<!$/
 au InsertLeave * match TrailingWhitespace /\s\+$/
 au BufWinEnter * match TrailingWhitespace /\s\+$/
-au BufWinLeave * call clearmatches() " avoids memory leak
+au BufWinLeave * call clearmatches()  " avoids memory leak
 
 " ================ Filetypes ===============================
 
@@ -95,17 +95,16 @@ if has('gui_running')
 	colorscheme summerfruit256
 	"set columns=80
 	"set guifont=Monospace\ 8
-	set guioptions+=c        " use console dialogs
-	set guioptions-=T        " disable gui toolbar
+	set guioptions+=c  " use console dialogs
+	set guioptions-=T  " disable gui toolbar
 
 	" Airline statusbar
 	set laststatus=2
-
 	let g:airline_powerline_fonts=1
 	let g:airline_theme='luna'
 	let g:airline#extensions#branch#enabled=1
 else
-	set t_Co=256 " Needed in order to get colors for some schems, e.g. lucius
+	set t_Co=256  " needed in order to get colors for some schems, e.g. lucius
 	colorscheme lucius
 	LuciusDarkHighContrast
 endif
