@@ -29,6 +29,12 @@ Plugin 'othree/html5.vim'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'lepture/vim-jinja'
 
+" Asciidoc
+Plugin 'tomtom/tlib_vim'          " dependency: vim-asciidoc
+Plugin 'dahu/Asif'                " dependency: vim-asciidoc
+Plugin 'vim-scripts/SyntaxRange'  " dependency: vim-asciidoc
+Plugin 'dahu/vim-asciidoc'
+
 " Python
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'nvie/vim-flake8'
