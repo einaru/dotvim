@@ -8,17 +8,17 @@ call vundle#begin()
 "" let Vundle manage Vundle
 Plugin 'gmarik/vundle'
 
+" Cosmetics
+Plugin 'einaru/vim-colorschemes'
+Plugin 'bling/vim-airline'
+
 "" Utilities
 Plugin 'scrooloose/nerdtree'
 Plugin 'sirver/ultisnips'
 Plugin 'honza/vim-snippets'
-"Plugin 'valloric/youcompleteme'
 
 " Git
 Plugin 'tpope/vim-fugitive'
-
-" Cosmetics
-Plugin 'bling/vim-airline'
 
 " Javascript
 Plugin 'pangloss/vim-javascript'
@@ -28,19 +28,13 @@ Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'othree/html5.vim'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'lepture/vim-jinja'
-"Plugin 'gorodinskiy/vim-coloresque'
-"Plugin 'mattn/emmet-vim'
 
 " Python
 Plugin 'hynek/vim-python-pep8-indent'
-"Plugin 'klen/python-mode'
 Plugin 'nvie/vim-flake8'
-"Plugin 'davidhalter/jedi-vim'
-"Plugin 'andviro/flake8-vim'
 
 " Vala
 Plugin 'einaru/vim-vala-bim'
-Plugin 'einaru/vim-colorschemes'
 
 call vundle#end()
 filetype plugin indent on
