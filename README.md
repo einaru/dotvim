@@ -17,7 +17,7 @@ My personal vim configuration.
 First you clone this repository
 
 ```
-git clone https://github.com/einaru/vim-config ~/.vim
+git clone https://github.com/einaru/dotvim.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
 ```
 
