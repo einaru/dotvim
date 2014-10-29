@@ -1,6 +1,7 @@
-# Vim config
+# Readme .vim
 
 My personal vim configuration.
+
 
 ## Structure
 
@@ -10,20 +11,26 @@ My personal vim configuration.
 - `keymaps.vim` contains custom key mappings.
 - `functions.vim` contains custom functions.
 
-[vundle]: https://github.com/gmarik/Vundle.vim
 
-## Setup
+## Install
 
-First you clone this repository
+Clone the repository and create a symlink to `~/.vimrc`:
 
-```
+``` bash
 git clone https://github.com/einaru/dotvim.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
 ```
 
-And then install [Vundle][], and the plugins
+Install [Vundle][]:
 
-```
+``` bash
 git clone https://github.com/gmarik/Vundle.vim ~/.vim/bundle/vundle
-vim +PluginInstall +qall
 ```
+
+Install/update plugins:
+
+``` bash
+vim +PluginInstall! +qall
+```
+
+[vundle]: https://github.com/gmarik/Vundle.vim
