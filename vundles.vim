@@ -34,7 +34,7 @@ Plugin 'lepture/vim-jinja'
 " Python
 Plugin 'hynek/vim-python-pep8-indent'
 "Plugin 'klen/python-mode'
-"Plugin 'nvie/vim-flake8'
+Plugin 'nvie/vim-flake8'
 "Plugin 'davidhalter/jedi-vim'
 "Plugin 'andviro/flake8-vim'
 
