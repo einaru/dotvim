@@ -48,6 +48,14 @@ fun! ToggleTodoTag()
 		let tag_pattern = 'DONE'
 		let tag_replace = 'TODO'
 		let match_found = 1
+	elseif match(curline, 'FIXME') != -1
+		let tag_pattern = 'FIXME'
+		let tag_replace = 'FIXED'
+		let match_found = 1
+	elseif match(curline, 'FIXED') != -1
+		let tag_pattern = 'FIXED'
+		let tag_replace = 'FIXME'
+		let match_found = 1
 	endif
 
 	" Do substitution
