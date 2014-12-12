@@ -92,7 +92,8 @@ let g:UltiSnipsEditSplit='horizontal'
 " ================ Gvim ====================================
 
 if has('gui_running')
-	colorscheme summerfruit256
+	colorscheme lucius
+	LuciusLightHighContrast
 	"set columns=80
 	"set guifont=Monospace\ 8
 	set guioptions+=c  " use console dialogs
