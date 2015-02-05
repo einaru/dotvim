@@ -20,14 +20,14 @@ Plugin 'honza/vim-snippets'
 " Git
 Plugin 'tpope/vim-fugitive'
 
-" Javascript
-Plugin 'pangloss/vim-javascript'
-Plugin 'mustache/vim-mustache-handlebars'
-
 " Html, xml, css, markdown, ...
 Plugin 'othree/html5.vim'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'lepture/vim-jinja'
+
+" Javascript
+Plugin 'pangloss/vim-javascript'
+Plugin 'mustache/vim-mustache-handlebars'
 
 " Asciidoc
 Plugin 'tomtom/tlib_vim'          " dependency: vim-asciidoc
@@ -41,6 +41,9 @@ Plugin 'nvie/vim-flake8'
 
 " Vala
 Plugin 'einaru/vim-vala-bim'
+
+" neo4j
+Plugin 'neo4j-contrib/cypher-vim-syntax'
 
 call vundle#end()
 filetype plugin indent on
