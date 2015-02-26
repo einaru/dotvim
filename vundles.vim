@@ -24,6 +24,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'othree/html5.vim'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'lepture/vim-jinja'
+Plugin 'ap/vim-css-color'
 
 " Javascript
 Plugin 'pangloss/vim-javascript'
