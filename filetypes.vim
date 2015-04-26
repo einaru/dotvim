@@ -13,8 +13,12 @@ if has('autocmd')
 
 	" ============ Html, Css, ... ==========================
 	au BufNewFile,BufRead *.jade set ts=2 sw=2 sts=2 noet
-	au FileType html,xhtml,xml,xsd,css,ant set ts=2 sw=2 sts=2 noet
+	au FileType html,xhtml,xsd,css,ant set ts=2 sw=2 sts=2 noet
 	au BufNewFile,BufRead *.md,*.markdown set ft=markdown
+
+	" ============ Glade UI files ==========================
+	au BufNewFile,BufRead *.ui set ts=2 sw=2 sts=2 et
+	au FileType xml set ts=2 sw=2 sts=2 et
 
 	" ============ Javascript ==============================
 	au BufNewFile,BufRead *.json set ft=javascript

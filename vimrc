@@ -84,28 +84,30 @@ endif
 " ================ Plugin specifics ========================
 
 " UltiSnips snippets engine
-let g:UltiSnipsExpandTrigger='<c-j>'
-let g:UltiSnipsJumpForwardTrigger='<c-j>'
-let g:UltiSnipsJumpBackwardTrigger='<c-k>'
-let g:UltiSnipsEditSplit='horizontal'
+"let g:UltiSnipsExpandTrigger='<c-j>'
+"let g:UltiSnipsJumpForwardTrigger='<c-j>'
+"let g:UltiSnipsJumpBackwardTrigger='<c-k>'
+"let g:UltiSnipsEditSplit='horizontal'
 
 " ================ Gvim ====================================
 
+syntax enable
+colorscheme solarized
+
 if has('gui_running')
-	colorscheme lucius
-	LuciusLightHighContrast
-	"set columns=80
-	"set guifont=Monospace\ 8
+	set background=light
 	set guioptions+=c  " use console dialogs
 	set guioptions-=T  " disable gui toolbar
+	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline
 
 	" Airline statusbar
 	set laststatus=2
 	let g:airline_powerline_fonts=1
-	let g:airline_theme='luna'
+	let g:airline_symbols = get(g:, 'airline_symbols', {})
+	let g:airline_theme="solarized"
+
 	let g:airline#extensions#branch#enabled=1
 else
-	set t_Co=256  " needed in order to get colors for some schems, e.g. lucius
-	colorscheme lucius
-	LuciusDarkHighContrast
+	set t_Co=256  " needed for some colorschems, e.g. lucius, solarized
+	"set background=dark
 endif

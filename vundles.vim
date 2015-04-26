@@ -10,15 +10,21 @@ Plugin 'gmarik/vundle'
 
 " Cosmetics
 Plugin 'einaru/vim-colorschemes'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 
 "" Utilities
 Plugin 'scrooloose/nerdtree'
-Plugin 'sirver/ultisnips'
-Plugin 'honza/vim-snippets'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'vim-scripts/Smart-Tabs'
 
-" Git
-Plugin 'tpope/vim-fugitive'
+" Vala
+Plugin 'einaru/vim-vala-bim'
+
+" Python
+Plugin 'hynek/vim-python-pep8-indent'
+Plugin 'nvie/vim-flake8'
 
 " Html, xml, css, markdown, ...
 Plugin 'othree/html5.vim'
@@ -29,22 +35,6 @@ Plugin 'ap/vim-css-color'
 " Javascript
 Plugin 'pangloss/vim-javascript'
 Plugin 'mustache/vim-mustache-handlebars'
-
-" Asciidoc
-Plugin 'tomtom/tlib_vim'          " dependency: vim-asciidoc
-Plugin 'dahu/Asif'                " dependency: vim-asciidoc
-Plugin 'vim-scripts/SyntaxRange'  " dependency: vim-asciidoc
-Plugin 'dahu/vim-asciidoc'
-
-" Python
-Plugin 'hynek/vim-python-pep8-indent'
-Plugin 'nvie/vim-flake8'
-
-" Vala
-Plugin 'einaru/vim-vala-bim'
-
-" neo4j
-Plugin 'neo4j-contrib/cypher-vim-syntax'
 
 call vundle#end()
 filetype plugin indent on
