@@ -11,18 +11,19 @@ Plugin 'gmarik/vundle'
 " Cosmetics
 Plugin 'einaru/vim-colorschemes'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'endel/vim-github-colorscheme'
 Plugin 'bling/vim-airline'
 
 "" Utilities
 Plugin 'scrooloose/nerdtree'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'vim-scripts/Smart-Tabs'
 
 " Vala
 Plugin 'einaru/vim-vala-bim'
 
 " Python
+"Plugin 'davidhalter/jedi-vim'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'nvie/vim-flake8'
 

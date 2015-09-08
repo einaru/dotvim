@@ -54,7 +54,7 @@ set noexpandtab
 " Display special characters visually
 set lcs=tab:\|-,trail:~,nbsp:¬,precedes:<,extends:>
 set linebreak
-set list
+set nolist
 
 " Add a highlight group to look out for trailing whitespaces
 highlight TrailingWhitespace ctermbg=red guibg=red
@@ -81,6 +81,12 @@ if filereadable(expand('~/.vim/keymaps.vim'))
 	source ~/.vim/keymaps.vim
 endif
 
+" ================ Stuff to ignore =========================
+
+if filereadable(expand('~/.vim/ignore.vim'))
+	source ~/.vim/ignore.vim
+endif
+
 " ================ Plugin specifics ========================
 
 " UltiSnips snippets engine
@@ -92,20 +98,20 @@ endif
 " ================ Gvim ====================================
 
 syntax enable
-colorscheme solarized
 
 if has('gui_running')
+	colorscheme github
 	set background=light
 	set guioptions+=c  " use console dialogs
 	set guioptions-=T  " disable gui toolbar
+	set guioptions-=m  " dialogs gui menubar
 	set guifont=DejaVu\ Sans\ Mono\ for\ Powerline
 
 	" Airline statusbar
 	set laststatus=2
 	let g:airline_powerline_fonts=1
 	let g:airline_symbols = get(g:, 'airline_symbols', {})
-	let g:airline_theme="solarized"
-
+	let g:airline_theme="light"
 	let g:airline#extensions#branch#enabled=1
 else
 	set t_Co=256  " needed for some colorschems, e.g. lucius, solarized
